@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gallery</h1>
+      <div id="grid"></div>
+      <div id="load-trigger">
+        <div id="loading-more" style="display: none">Đang tải thêm...</div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" style="display: none">
+      <div id="lightbox-overlay"></div>
+      <div id="lightbox-content">
+        <button id="lightbox-close">✕</button>
+        <img id="lightbox-img" src="" alt="" />
+        <p id="lightbox-title"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
