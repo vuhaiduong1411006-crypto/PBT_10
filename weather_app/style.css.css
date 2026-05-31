@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #1a1a1a;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+/* Result */
+#result {
+  margin-bottom: 24px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.loading-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-top-color: #1a1a1a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.weather-card {
+  border: 2px solid #1a1a1a;
+  padding: 24px;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.weather-icon {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.weather-city {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.weather-temp {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.weather-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.weather-humidity {
+  font-size: 1rem;
+  color: #444;
+}
+
+.error-box {
+  border: 2px solid #c0392b;
+  padding: 14px;
+  background: #fff5f5;
+  color: #c0392b;
+  font-size: 1rem;
+}
+
+/* History */
+.history-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+#history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.history-btn {
+  padding: 6px 14px;
+  border: 1px solid #1a1a1a;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.history-btn:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+}

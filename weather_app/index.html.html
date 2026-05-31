@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời Tiết</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thời Tiết</h1>
+
+      <div class="search-row">
+        <input id="city-input" type="text" placeholder="Nhập tên thành phố..." />
+        <button id="search-btn">Tìm</button>
+      </div>
+
+      <div id="result"></div>
+
+      <div id="history-section" style="display: none">
+        <p class="history-title">Tìm kiếm gần đây</p>
+        <div id="history-list"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
