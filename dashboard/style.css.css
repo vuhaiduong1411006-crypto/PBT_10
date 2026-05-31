@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background: #f0f0f0;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#load-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+#refresh-btn {
+  padding: 8px 18px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#refresh-btn:hover {
+  background: #444;
+}
+#refresh-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.widget.wide {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .widget.wide {
+    grid-column: auto;
+  }
+}
+
+/* Widget */
+.widget {
+  background: #fff;
+  border: 2px solid #1a1a1a;
+  padding: 20px;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.widget-body {
+  min-height: 60px;
+}
+
+/* Skeleton */
+.skeleton-line {
+  height: 14px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* Error state */
+.widget-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+/* Weather */
+.weather-temp {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.weather-detail {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* Country */
+.country-row {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+}
+
+.country-label {
+  color: #888;
+  min-width: 100px;
+}
+
+/* Users */
+.user-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+.user-email {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Posts */
+.post-item {
+  border-left: 3px solid #1a1a1a;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.post-title {
+  font-size: 0.88rem;
+  color: #1a1a1a;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Dogs */
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .dog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.dog-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #ddd;
+}

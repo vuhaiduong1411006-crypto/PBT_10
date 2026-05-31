@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Dashboard</h1>
+        <div class="header-right">
+          <span id="load-time"></span>
+          <button id="refresh-btn">↺ Refresh All</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Widget 1: Weather -->
+        <div class="widget" id="widget-weather">
+          <div class="widget-title">🌤 Thời tiết Hà Nội</div>
+          <div class="widget-body" id="body-weather">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+          </div>
+        </div>
+
+        <!-- Widget 2: Vietnam Info -->
+        <div class="widget" id="widget-country">
+          <div class="widget-title">🇻🇳 Thông tin Việt Nam</div>
+          <div class="widget-body" id="body-country">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+          </div>
+        </div>
+
+        <!-- Widget 3: Random Users -->
+        <div class="widget" id="widget-users">
+          <div class="widget-title">👥 Random Users</div>
+          <div class="widget-body" id="body-users">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+          </div>
+        </div>
+
+        <!-- Widget 4: Latest Posts -->
+        <div class="widget" id="widget-posts">
+          <div class="widget-title">📝 Latest Posts</div>
+          <div class="widget-body" id="body-posts">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+          </div>
+        </div>
+
+        <!-- Widget 5: Dog Images -->
+        <div class="widget wide" id="widget-dogs">
+          <div class="widget-title">🐶 Random Dogs</div>
+          <div class="widget-body" id="body-dogs">
+            <div class="skeleton-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
