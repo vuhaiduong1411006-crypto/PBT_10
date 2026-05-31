@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toast"></div>
+
+    <div class="container">
+      <h1>User Directory</h1>
+
+      <div class="toolbar">
+        <input id="search-input" type="text" placeholder="Tìm theo tên hoặc email..." />
+        <button id="add-btn">+ Thêm User</button>
+      </div>
+
+      <div id="user-list"></div>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="modal-overlay" style="display: none">
+      <div class="modal">
+        <h2 id="modal-title">Thêm User</h2>
+        <input id="form-name" type="text" placeholder="Họ tên" />
+        <input id="form-email" type="email" placeholder="Email" />
+        <input id="form-phone" type="text" placeholder="Số điện thoại" />
+        <input id="form-website" type="text" placeholder="Website" />
+        <div class="modal-actions">
+          <button id="form-cancel">Hủy</button>
+          <button id="form-submit">Lưu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
